@@ -1,7 +1,7 @@
 import NavigationItem from "./navigationItem";
 
 
-const navigationItems = [{title:"Legionary",link:"/legionary"},{title:"Auxiliary",link:"/auxiliary"},{title:"Camp",link:"/camp"}, {title:"Ranks",link:"/ranks"},{title:"Tactics",link:"/tactics"},{title:"Cavalry",link:"/cavalry"}]
+const navigationItems = [{title:"Legionary",link:"/barracks/legionary"},{title:"Auxiliary",link:"/barracks/auxiliary"},{title:"Camp",link:"/barracks/camp"}, {title:"Ranks",link:"/barracks/ranks"},{title:"Tactics",link:"/barracks/tactics"},{title:"Cavalry",link:"/barracks/cavalry"}]
 
 const Navigation = () => {
 
