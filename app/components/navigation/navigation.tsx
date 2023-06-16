@@ -7,7 +7,9 @@ const Navigation = () => {
 
     return (
         <div className="flex flex-col lg:flex-row gap-24  justify-center items-center relative top-10">
-            {navigationItems.map((item,index) => <NavigationItem key={index} title={item.title} link={item.link}/>)}
+            {navigationItems.map((item,index) => 
+            <NavigationItem key={item.title} title={item.title} link={item.link}/>
+            )}
 
 
         </div>
