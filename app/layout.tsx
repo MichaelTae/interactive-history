@@ -15,7 +15,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className='border-b border-black shadow-[0px_10px_20px_0px_rgba(0,0,0,0.7),0px_15px_30px_10px_rgba(10,10,10,0.7)]  w-full fixed backdrop-blur-sm bg-slate-900/95 z-10 h-10'></div>
+        <div className='border-t  border-black  bottom-0 backdrop-blur-sm bg-slate-900/90 w-full fixed h-10 z-10'></div>
+        {children}
+        
+        </body>
     </html>
   )
 }
