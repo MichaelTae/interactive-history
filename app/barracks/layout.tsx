@@ -4,11 +4,11 @@ export default function BarracksLayout({
   children: React.ReactNode;
 }) {
   return (
-    <section>
-      <div className='flex flex-col md:flex-row justify-center h-full border'>
-        
+    <section className='flex flex-col md:flex-row justify-center bg-slate-800 border  min-h-screen   min-w-full '>
+    
+        <div className="absolute top-20 self-center">
         {children}
-      </div>
+        </div>
     </section>
   );
 }
