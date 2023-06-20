@@ -33,9 +33,9 @@ const LegionaryPage = () => {
       
      
       <div className='flex justify-center flex-col items-center gap-12 basis-1/4 '>
-      <CustomButton title='Lorica Segmentata'sethighlighted={setHighlighted} openModal={handleOpenModal} />
-      <CustomButton title='Caligae'sethighlighted={setHighlighted} openModal={handleOpenModal} />
-      <CustomButton title='Galea'sethighlighted={setHighlighted} openModal={handleOpenModal} />
+      <CustomButton title='Lorica Segmentata'sethighlighted={setHighlighted} openModal={handleOpenModal} mouseLeave={true} />
+      <CustomButton title='Caligae'sethighlighted={setHighlighted} openModal={handleOpenModal} mouseLeave={true} />
+      <CustomButton title='Galea'sethighlighted={setHighlighted} openModal={handleOpenModal} mouseLeave={true} />
       
       </div>
         {/* This div is for the image/svg of the soldier/item */}
@@ -52,9 +52,9 @@ const LegionaryPage = () => {
 
     <Modal title={modalTitle} isOpen={isModalOpen} onClose={handleCloseModal} type={'Legionary'} />  
       <div className='flex justify-center items-center flex-col gap-12  basis-1/4'>
-      <CustomButton title='Cingulum Militare'sethighlighted={setHighlighted} openModal={handleOpenModal} /> 
-      <CustomButton title='Scutum'sethighlighted={setHighlighted}  openModal={handleOpenModal}/> 
-      <CustomButton title='Weaponry'sethighlighted={setHighlighted} openModal={handleOpenModal} />
+      <CustomButton title='Cingulum Militare'sethighlighted={setHighlighted} openModal={handleOpenModal} mouseLeave={true} /> 
+      <CustomButton title='Scutum'sethighlighted={setHighlighted}  openModal={handleOpenModal} mouseLeave={true}/> 
+      <CustomButton title='Weaponry'sethighlighted={setHighlighted} openModal={handleOpenModal} mouseLeave={true} />
       </div>
       </div>
 
