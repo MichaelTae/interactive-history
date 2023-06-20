@@ -29,15 +29,15 @@ const NavigationItem = ({ title, link }: { title: string; link: string }) => {
     
   return (
     <a
-      className='border border-cyan-300  w-28 h-28 rotate-45 p-10  items-center flex justify-center
-       bg-blue-900/40 hover:bg-blue-900 transition-all duration-300 group hover:scale-110 shadow-[5px_5px_2px_0px_rgba(109,40,217,0.4)] hover:shadow-inner hover:shadow-black '
+      className='border backdrop-blur-sm border-cyan-300  w-28 h-28 rotate-45 p-10  items-center flex justify-center
+       bg-blue-900/70 hover:bg-blue-900 transition-all duration-300 group hover:scale-110 shadow-[5px_5px_2px_0px_rgba(109,40,217,0.4)] hover:shadow-inner hover:shadow-black '
       href={link}
     >
       {BorderAnimation()}
 
      
-      <div className='absolute w-full  animate-pulse h-full shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)]'></div>
-      <div className='-rotate-45  group-hover:scale-105 relative transition-all duration-300'>
+      <div className='absolute w-full  animate-pulse h-full shadow-[5px_5px_rgba(0,_98,_90,_0.7),_10px_10px_rgba(0,_98,_90,_0.6),_15px_15px_rgba(0,_98,_90,_0.4),_20px_20px_rgba(0,_98,_90,_0.3),_25px_25px_rgba(0,_98,_90,_0.2)]'></div>
+      <div className='-rotate-45 text-xl  group-hover:scale-105 relative transition-all duration-300'>
         {title}
       </div>
     </a>
