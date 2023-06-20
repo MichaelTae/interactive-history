@@ -23,7 +23,7 @@ const getCategoryContent = (category: string | number, title: string | number) =
  
   return (
     <div className='flex text-black relative  w-full h-3/4'>
-      <div className='w-1/2  absolute flex -top-6 text-slate-400  justify-center '>
+      <div className='w-1/2  absolute flex -top-7 text-slate-400 text-xl justify-center '>
       <div
           onClick={() => setActiveSection('Summary')}
           className={`${
