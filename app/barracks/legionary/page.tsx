@@ -4,7 +4,12 @@ import CustomButton from "@/app/components/button/customButton";
 import LegionarySvg from "../../components/LegionarySVG";
 import { useState } from "react";
 import Modal from '../../components/modal/modal'
-
+import Image from "next/image";
+import bgLegionary from '../../../public/bgLegionary.jpg'
+import { TitleText } from "@/app/components/text/titleText";
+import { ImageContainer } from "@/app/components/containers/imageContainer";
+import { ButtonContainer } from "@/app/components/containers/buttonContainer";
+import { MainContainer } from "@/app/components/containers/mainContainer";
 
 
 
@@ -24,42 +29,41 @@ const LegionaryPage = () => {
   };
   
   return (
-    <div className='flex flex-col relative w-screen  '>
-      <h1 className='flex self-center mb-1 text-3xl'>Legionary</h1>
+    < >
+      <Image src={bgLegionary} fill placeholder='blur' className="absolute h-screen z-[1] object-cover" alt='Background picture of roman archways and buildings'/>
+      <TitleText title='Legionary'/>
       {/* Div below will be extra buttons to switch between different soldiers/items */}
-      <div className='flex gap-2 self-center border w-3/4 justify-center '><div>PlaceHolder</div></div> 
+      <div className='flex gap-2 self-center border w-3/4 justify-center z-10 '><div>PlaceHolder</div></div> 
 
-      <div className="flex  w-3/4 self-center border h-[70vh] ">
+      <MainContainer>
       
      
-      <div className='flex justify-center flex-col items-center gap-12 basis-1/4 '>
+      <ButtonContainer>
       <CustomButton title='Lorica Segmentata'sethighlighted={setHighlighted} openModal={handleOpenModal} mouseLeave={true} />
       <CustomButton title='Caligae'sethighlighted={setHighlighted} openModal={handleOpenModal} mouseLeave={true} />
       <CustomButton title='Galea'sethighlighted={setHighlighted} openModal={handleOpenModal} mouseLeave={true} />
       
-      </div>
+      </ButtonContainer>
         {/* This div is for the image/svg of the soldier/item */}
-      <div className='flex border justify-center items-center flex-col  gap-12 basis-2/4'>
-        <div className="flex relative w-full h-full pt-12 justify-center overflow-hidden">
+      
           
-          
+          <ImageContainer>
           <LegionarySvg highlighted={highlighted}/> 
-        
+          </ImageContainer>
        
-       
-       </div>
-      </div>
-
-    <Modal title={modalTitle} isOpen={isModalOpen} onClose={handleCloseModal} type={'Legionary'} />  
-      <div className='flex justify-center items-center flex-col gap-12  basis-1/4'>
+     
+      
+    
+    
+      <ButtonContainer>
       <CustomButton title='Cingulum Militare'sethighlighted={setHighlighted} openModal={handleOpenModal} mouseLeave={true} /> 
       <CustomButton title='Scutum'sethighlighted={setHighlighted}  openModal={handleOpenModal} mouseLeave={true}/> 
       <CustomButton title='Weaponry'sethighlighted={setHighlighted} openModal={handleOpenModal} mouseLeave={true} />
-      </div>
-      </div>
+      </ButtonContainer>
+      </MainContainer>
+      <Modal title={modalTitle} isOpen={isModalOpen} onClose={handleCloseModal} type={'Legionary'} />  
 
-
-    </div>
+    </>
   );
 };
 
