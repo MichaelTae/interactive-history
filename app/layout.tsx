@@ -1,7 +1,12 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Inter,Cinzel } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
+const cinzel = Cinzel({
+  display:'swap',
+  variable:'--font-cinzel',
+  subsets:['latin']
+})
 
 export const metadata = {
   title: 'Create Next App',
@@ -15,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} flex-1 relative min-h-screen`}>
+      <body className={`${inter.className} ${cinzel.variable} flex-1 relative min-h-screen`}>
         <div className='border-b border-black shadow-[0px_10px_20px_0px_rgba(0,0,0,0.7),0px_15px_30px_10px_rgba(10,10,10,0.7)]  w-full fixed backdrop-blur-sm bg-slate-900/95 z-10 h-10'></div>
         <div className='border-t  border-black  bottom-0 backdrop-blur-sm bg-slate-900/90 w-full fixed h-10 z-10'></div>
         {children}
