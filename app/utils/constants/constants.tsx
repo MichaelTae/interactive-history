@@ -4,7 +4,10 @@ import Galea from '../../../public/Galea.png';
 import CingulumMilitare from '../../../public/CingulumMilitare.png';
 import Scutum from '../../../public/Scutum.png';
 import LegionaryWeaponry from '../../../public/LegionaryWeaponry.png';
-import Sagittariorum from '../../../public/Sagittariorum.jpg';
+import Sagittariorum from '../../../public/Sagittariorum.png';
+import Alae from '../../../public/Alae.jpg';
+import Cohortes from '../../../public/Cohortes.jpg';
+import Exploratores from '../../../public/Exploratores.png';
 const content: any = {
     Legionary:{
     'Lorica Segmentata': {
@@ -55,13 +58,35 @@ const content: any = {
 
 },
     Auxiliary: {
-        'Sagittariorum': {
+        'Sagittarii': {
             image:Sagittariorum,
-            desciption:"",
+            description:"",
             name:"",
             history:"",
             usage:""
         },
+        'Alae': {
+            image:Alae,
+            description:"",
+            name:"",
+            history:"",
+            usage:""
+        },
+        'Cohortes': {
+            image:Cohortes,
+            description:"",
+            name:"",
+            history:"",
+            usage:""
+        },
+        'Exploratores': {
+            image:Exploratores,
+            description:"",
+            name:"",
+            history:"",
+            usage:""
+        },
+       
     },
 
   };
